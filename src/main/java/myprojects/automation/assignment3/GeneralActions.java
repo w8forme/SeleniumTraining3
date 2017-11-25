@@ -60,13 +60,6 @@ public class GeneralActions {
         } else {
             throw new NoSuchElementException("Confirmation message isn't displayed!");
         }
-        waitForContentLoad();
-        categoriesPage.filterCategoriesByName();
-        waitForContentLoad();
-        WebElement newCategory = driver.findElement(By.xpath("//tbody/tr/td[contains(text(),'" + categoryName + "')]"));
-        if (categoryName.equals(newCategory.getText())) {
-            System.out.println("Category name displayed correctly!");
-        }
     }
 
     /**

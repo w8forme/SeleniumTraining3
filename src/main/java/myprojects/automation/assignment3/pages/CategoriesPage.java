@@ -3,14 +3,12 @@ package myprojects.automation.assignment3.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Created by Pavel Holinko on 23.11.2017.
  */
 public class CategoriesPage {
     private WebDriver driver;
-    private WebDriverWait wait;
 
     public CategoriesPage(WebDriver driver) {
         this.driver = driver;
